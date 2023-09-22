@@ -1,0 +1,30 @@
+.spectr {
+  font: 800 70px Arial;
+  font-style: italic;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px;
+  position: relative;
+  flex: 50%;
+
+  &::after {
+    content: 'СПЕКТР';
+    font: 800 70px Arial;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    position: absolute;
+    left: 10px;
+    top: -48px;
+  }
+
+  &::before {
+    content: 'СПЕКТР';
+    font: 800 70px Arial;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    position: absolute;
+    left: -10px;
+    top: 48px;
+  }
+}

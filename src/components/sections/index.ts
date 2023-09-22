@@ -1,0 +1,5 @@
+export * from './home/MainTitle/MainTitle'
+export * from './home/WhyDoU/WhyDoU'
+export * from './home/AboutUs/AboutUs'
+export * from './home/OurServices/OurServices'
+export * from './home/Portfolio/Portfolio'

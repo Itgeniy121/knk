@@ -1,0 +1,21 @@
+.about__outlined-text {
+  font: 800 100px Arial;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px;
+}
+
+@media screen and (max-width: 1024px){
+  .about__outlined-text {
+    font: 800 70px Arial;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+  }
+}
+
+@media screen and (max-width: 620px){
+  .about__outlined-text {
+    font: 800 60px Arial;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+  }
+}

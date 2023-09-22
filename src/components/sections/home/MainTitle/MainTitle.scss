@@ -1,0 +1,31 @@
+.main-logo{
+  animation: 1.5s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running main-logo;
+  transform: translate3d(0, -300px, 0);
+}
+
+.sub-logo {
+  animation:2.5s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running main-logo;
+  color: white;
+}
+
+@keyframes main-logo {
+
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}

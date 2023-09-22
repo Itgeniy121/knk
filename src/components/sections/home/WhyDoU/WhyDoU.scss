@@ -1,0 +1,43 @@
+.why-card-prev{
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 20px;
+  background: #3d3d3d;
+  z-index: -1;
+}
+
+.outlined-text {
+  font: 800 100px Arial;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px;
+}
+
+.outlined-text__small {
+  font: 800 40px Arial;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+
+@media screen and (max-width: 1280px) {
+  .outlined-text {
+    font: 800 60px Arial;
+  }
+
+  .outlined-text__small {
+    font: 800 30px Arial;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .outlined-text {
+    font: 800 80px Arial;
+  }
+
+  .outlined-text__small {
+    font: 800 30px Arial;
+  }
+}
