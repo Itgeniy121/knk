@@ -1,15 +1,17 @@
-import React from 'react';
-import cl from './Portfolio.module.scss'
-
-import bestOfferImg from '../../../../../assets/imgs/bestofferstore.png'
-import Image from "next/image";
+import React from "react";
+import cl from "./Portfolio.module.scss";
+import Case2 from "./components/Case2";
+import Case1 from "./components/Case1";
+import Case3 from "./components/Case3";
 const Portfolio = () => {
   return (
-    <div className='container mb-40'>
+    <div className='container flex flex-col mb-[100px]'>
       <h2 className={cl.title}>
         <span className={cl.raboti}>Наши работы</span>
       </h2>
-      <Image src={bestOfferImg} alt='bestOffer' width={bestOfferImg.width} height={bestOfferImg.height}/>
+      <Case2 />
+      <Case1 />
+      <Case3 />
     </div>
   );
 };
