@@ -28,3 +28,136 @@
     top: 48px;
   }
 }
+@media (max-width: 990px){
+  .spectr {
+    font: 600 50px Arial;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    position: relative;
+    flex: 50%;
+  
+    &::after {
+      content: 'СПЕКТР';
+      font: 600 50px Arial;
+      font-style: italic;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 2px;
+      position: absolute;
+      left: 10px;
+      top: -37px;
+    }
+  
+    &::before {
+      content: 'СПЕКТР';
+      font: 600 50px Arial;
+      font-style: italic;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 2px;
+      position: absolute;
+      left: -10px;
+      top: 37px;
+    }
+  }
+
+}
+@media (max-width: 750px){
+  .spectr {
+    font: 400 39px Arial;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    position: relative;
+    flex: 50%;
+  
+    &::after {
+      content: 'СПЕКТР';
+      font: 400 39px Arial;
+      font-style: italic;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px;
+      position: absolute;
+      left: 10px;
+      top: -27px;
+    }
+  
+    &::before {
+      content: 'СПЕКТР';
+      font: 400 39px Arial;
+      font-style: italic;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px;
+      position: absolute;
+      left: -10px;
+      top: 27px;
+    }
+  }
+
+}
+@media (max-width: 466px){
+  .spectr {
+    font: 400 27px Arial;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    position: relative;
+    flex: 50%;
+  
+    &::after {
+      content: 'СПЕКТР';
+      font: 400 27px Arial;
+      font-style: italic;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px;
+      position: absolute;
+      left: 10px;
+      top: -27px;
+    }
+  
+    &::before {
+      content: 'СПЕКТР';
+      font: 400 27px Arial;
+      font-style: italic;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px;
+      position: absolute;
+      left: -10px;
+      top: 27px;
+    }
+  }
+
+}
+@media (max-width: 420px){
+  .spectr {
+    font: 300 25px Arial;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    position: relative;
+    flex: 50%;
+  
+    &::after {
+      content: 'СПЕКТР';
+      font: 300 25px Arial;
+      font-style: italic;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px;
+      position: absolute;
+      left: 10px;
+      top: -20px;
+    }
+  
+    &::before {
+      content: 'СПЕКТР';
+      font: 300 25px Arial;
+      font-style: italic;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px;
+      position: absolute;
+      left: -10px;
+      top: 20px;
+    }
+  }
+
+}
+

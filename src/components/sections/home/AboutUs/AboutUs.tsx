@@ -3,7 +3,7 @@ import './AboutUs.scss'
 
 const AboutUs = () => {
   return (
-    <section className='mb-40 container flex sm:flex-row flex-col sm:gap-0 gap-10 '>
+    <section className='mb-40 container flex sm:flex-row flex-col sm:gap-0 gap-10 max-s:justify-center max-s:items-center'>
       <div className='flex-[50%] flex items-center justify-center relative'>
         <h2 className='about__outlined-text '>
           <span className='sm:block hidden'>
