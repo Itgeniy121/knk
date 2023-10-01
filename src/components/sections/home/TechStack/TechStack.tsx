@@ -12,7 +12,7 @@ import "./TechStack.scss"
 const TechStack = () => {
     const swiper = useSwiper();
   return(
-    <div className="container pt-10">
+    <div className="container pt-10 max-l:pt-[0px]">
         <h2 className="title">
             <span >Технологии&nbsp;</span>
             <span className="tech">и инструменты</span>
@@ -22,6 +22,7 @@ const TechStack = () => {
         pagination={{ clickable: true }}
         navigation
         modules={[Navigation, Pagination, A11y]}
+        className="max-ipad:h-[430px] max-mm:h-[410px] max-sml:h-[370px] max-xsml:h-[340px]"
         >
             <SwiperSlide className="flex items-center justify-center">
                 <div className="w-full h-[370px] flex items-center justify-center">

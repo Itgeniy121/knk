@@ -14,7 +14,7 @@ const StackPanel = () => {
   return(
     <div className="panel">
         <Image src={react} alt="react" className="techLogo"/>
-        <Image src={tailwind} alt="tailwind" className="techLogo !h-[38px]"/>
+        <Image src={tailwind} alt="tailwind" className="techLogo !h-[38px] max-sml:!h-[22px]"/>
         <Image src={next} alt="next" className="techLogo"/>
         <Image src={nodeJs} alt="nodeJs" className="techLogo"/>
         <Image src={sass} alt="sass" className="techLogo"/>
