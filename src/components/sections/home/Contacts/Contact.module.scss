@@ -90,6 +90,15 @@
     font-weight: 400;
     font-size: 15px;
   }
+  .link {
+    color: gray;
+    font-size: 10px;
+    font-weight: 300;
+    width: 83px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 @media (max-width: 669px) {
   .main {
@@ -101,9 +110,9 @@
 }
 @media (max-width: 559px) {
   .main {
-    font: 700 30px Arial;
+    font: 800 33px Arial;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1.1px;
+    -webkit-text-stroke: 1.3px;
     color: gray;
   }
   .socials {
@@ -114,20 +123,31 @@
     color: gray;
     font-size: 10px;
     font-weight: 300;
+    width: 83px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
-@media (max-width: 400px) {
-  .buttons {
-    font-weight: 300;
-    font-size: 11px;
+@media (max-width: 380px) {
+  .main {
+    font: 800 31px Arial;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.3px;
+    color: gray;
   }
   .socials {
     font-weight: 500;
-    font-size: 10px;
+    font-size: 13px;
   }
   .link {
     color: gray;
-    font-size: 7px;
+    font-size: 10px;
     font-weight: 300;
+    width: 83px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
+

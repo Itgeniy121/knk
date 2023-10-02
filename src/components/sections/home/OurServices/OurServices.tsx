@@ -1,7 +1,5 @@
 import React from 'react';
 import cl from './OurServices.module.scss'
-import {AiOutlineLaptop} from "react-icons/ai";
-import Link from "next/link";
 
 const OurServices = () => {
   return (
@@ -20,9 +18,6 @@ const OurServices = () => {
             <li>Landing-page</li>
             <li>Веб-приложения</li>
           </ul>
-          <Link href='/' className='text-[20px] opacity-50 hover:opacity-100 duration-300 self-end max-med:text-[15px]'>
-            <span>Подробнее</span>
-          </Link>
         </div>
         <div className='w-[49%] flex flex-col justify-between max-sml:w-full'>
           <div className='border-2 gap-4 border-white rounded-[40px] flex flex-col p-8 mb-[5px] max-sml:w-full max-sml:mb-[35px]'>
@@ -32,9 +27,6 @@ const OurServices = () => {
               <li>Анимации</li>
               <li>Интерфейс</li>
             </ul>
-            <Link href='/' className='text-[20px] opacity-50 hover:opacity-100 duration-300 self-end max-med:text-[15px]'>
-              <span>Подробнее</span>
-            </Link>
           </div>
           <div className='border-2 gap-4 border-white rounded-[40px] flex flex-col p-8 max-sml:w-full'>
             <p className='text-[40px] font-semibold max-l:text-[30px] max-med:text-[27px]'>Backend-разработка</p>
@@ -43,23 +35,14 @@ const OurServices = () => {
               <li>Сервер</li>
               <li>Запросы</li>
             </ul>
-            <Link href='/' className='text-[20px] opacity-50 hover:opacity-100 duration-300 self-end max-med:text-[15px]'>
-              <span>Подробнее</span>
-            </Link>
           </div>
         </div>
       </div>
       <div className='w-full border-2 mb-10 border-white rounded-[40px] p-10 text-[40px] font-semibold flex flex-col max-ssml:text-[28px]'>
         Разработка UX/UI-дизайна
-        <Link href='/' className='text-[20px] opacity-50 hover:opacity-100 duration-300 self-end max-med:text-[15px]'>
-          <span>Подробнее</span>
-        </Link>
       </div>
       <div className='w-full border-2 border-white rounded-[40px] p-10 text-[40px] font-semibold flex flex-col max-ssml:text-[28px]'>
         Техническая поддержка сайта
-        <Link href='/' className='text-[20px] opacity-50 hover:opacity-100 duration-300 self-end max-med:text-[15px]'>
-          <span>Подробнее</span>
-        </Link>
       </div>
     </div>
   );
