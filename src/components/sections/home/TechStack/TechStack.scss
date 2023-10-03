@@ -17,8 +17,13 @@
   }
   .techName{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
+  }
+  .techDescription{
+    font-weight: 300;
+    font-size: 13px;
+    color: gray;
   }
   .swiper-button-next{
     color: white;
@@ -32,7 +37,7 @@
   
   @media (max-width: 1300px) {
     .title {
-      font-size: 60px;
+      font-size: 55px;
       text-transform: uppercase;
       font-weight: 800;
       display: flex;
@@ -44,7 +49,7 @@
     }
     
     .tech {
-      font: 800 60px Arial;
+      font: 800 55px Arial;
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 2px;
     }
@@ -86,11 +91,6 @@
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 1px;
     }
-    .techName{
-      font-weight: 700;
-      font-size: 35px;
-      color: white;
-    }
     .swiper-button-next{
       display: none;
     }
@@ -119,34 +119,23 @@
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 1px;
     }
-    .techName{
-      font-weight: 700;
-      font-size: 25px;
-      color: white;
-    }
   }
   @media (max-width: 345px) {
+    .tech {
+      font: 700 30px Arial;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 0.5px;
+    }
     .title {
       font-size: 30px;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 800;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       width: 100%;
       flex-direction: column;
-    }
-    
-    .tech {
-      font: 700 30px Arial;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 0.5px;
-    }
-    .techName{
-      font-weight: 700;
-      font-size: 25px;
-      color: white;
     }
   }
   

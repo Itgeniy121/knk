@@ -8,9 +8,9 @@ const Case2 = () => {
     <div className='flex flex-row justify-between items-start mb-[150px] mt-[40px] max-ipad:flex-col max-sml:mb-[50px]'>
       <div className='flex flex-col w-[55%] h-full max-ipad:w-full'>
         <Image src={bestOfferImg} alt='bestOffer' className='w-full' />
-        <div className="max-ipad:hidden">
+        <div className="max-ipad:hidden mt-[25px]">
         <span className='mt-[20px] mb-[20px] text-[25px] font-[700]'>
-          Стек технологий
+          Инструменты, которые мы использовали:
         </span>
         <StackPanel/>
         </div>

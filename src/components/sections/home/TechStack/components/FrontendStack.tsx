@@ -1,60 +1,69 @@
 import React from "react";
 import Image from "next/image";
-import react from "../../../../../../assets/imgs/react.png"
-import next from "../../../../../../assets/imgs/next.png"
-import sass from "../../../../../../assets/imgs/sass.png"
-import tailwind from "../../../../../../assets/imgs/tailwind.png"
-import jest from "../../../../../../assets/imgs/jest.png"
-import storybook from "../../../../../../assets/imgs/storybook.svg"
-import redux from "../../../../../../assets/imgs/redux.png"
-import mobx from "../../../../../../assets/imgs/mobx.svg"
-import strapi from "../../../../../../assets/imgs/strapi.svg"
-import typecsript from "../../../../../../assets/imgs/typescript.png"
+import ts from "../imgs/ts.svg"
+import next from "../imgs/next.svg"
+import redux from "../imgs/redux.svg"
+import tailwind from "../imgs/tailwind.svg"
+import strapi from "../imgs/strapi.svg"
+import scss from "../imgs/sass.svg"
+import jest from "../imgs/jest (2).png"
+import mobx from "../imgs/mobx (2).svg"
+import sb from "../imgs/storybook-.svg"
 const FrontendStack = () => {
   return(
-    <div className="flex flex-row items-center justify-between w-[850px] h-[250px] rounded-[7px] px-[7px] mt-[50px] max-ipad:flex-col max-ipad:w-[650px] max-mm:w-[500px] max-mm:h-[170px] max-sml:w-[330px] max-sml:h-[180px] max-xsml:h-[150px] max-ssml:w-[280px]">
-        <div className="flex flex-row w-[50%] justify-between items-center max-ipad:w-full">
-        <div className="flex flex-col items-center justify-center">
-            <Image src={react} alt="react" className="w-[60px] h-[60px] max-mm:w-[40px] max-mm:h-[40px] "/>
-            <span className="max-mm:text-[13px] max-xsml:text-[10px]">React</span>
+    <div className="flex flex-col items-center justify-between w-full h-[630px] max-s:flex-row max-s:justify-center overflow-x-auto max-s:h-[400px]">
+        <div className="flex flex-row justify-between items-center w-full h-1/2 max-s:w-1/2">
+            <div className="w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="flex fill-white" height="2em" viewBox="0 0 512 512"><style>svg: fill:#ffffff</style><path d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zm-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zm-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8c-25.3 0-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8z"/></svg>
+                <span className="techName mt-[40px]">React.js</span>
+                <span className="techDescription w-full mt-[20px]">React — JavaScript-библиотека с открытым исходным кодом для разработки пользовательских интерфейсов</span>         
+            </div>
+            <div className="w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start">
+                <Image alt="ts" src={ts} className="w-[40px] h-[40px]"/>
+                <span className="techName mt-[40px]">TypeScript</span>
+                <span className="techDescription w-full mt-[20px]">TypeScript — это язык программирования, в котором исправлены многие недостатки JavaScript.</span>         
+            </div>
+            <div className="w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start">
+                <Image alt="next" src={next} className="w-[40px] h-[40px]"/>
+                <span className="techName mt-[40px]">Next.js</span>
+                <span className="techDescription w-full mt-[20px]">Next.js — открытый JavaScript фреймворк, созданный поверх React.js для создания веб-приложений</span>         
+            </div>
+            <div className="w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start">
+                <Image alt="next" src={redux} className="w-[40px] h-[40px]"/>
+                <span className="techName mt-[40px]">Redux</span>
+                <span className="techDescription w-full mt-[20px]">Redux — библиотека для JavaScript с открытым исходным кодом, предназначенная для управления состоянием приложения.</span>         
+            </div>
+            <div className="w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start">
+            <Image alt="next" src={tailwind} className="w-[40px] h-[40px]"/>
+                <span className="techName mt-[40px]">Tailwind css</span>
+                <span className="techDescription w-full mt-[20px]"> TailwindCSS – это CSS-библиотека, которая упрощает стилизацию HTML</span>         
+            </div>
         </div>
-        <div className="flex flex-col items-center justify-center pt-[10px]">
-            <Image src={tailwind} alt="react" className="w-[60px] h-[40px] max-mm:w-[40px] max-mm:h-[28px] "/>
-            <span className="mt-[10px] max-mm:text-[13px] max-xsml:mt-[0px] max-xsml:text-[10px]">Tailwind css</span>
+        <div className="flex flex-row justify-between items-center w-full h-1/2 max-s:w-1/2">
+        <div className="w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start">
+            <Image alt="next" src={strapi} className="w-[40px] h-[40px]"/>
+                <span className="techName mt-[40px]">Strapi</span>
+                <span className="techDescription w-full mt-[20px]">Strapi - фреймворк для управления контентом, работающий на Node.js</span>         
         </div>
-        <div className="flex flex-col items-center justify-center">
-            <Image src={typecsript} alt="react" className="w-[60px] h-[60px] max-mm:w-[40px] max-mm:h-[40px]"/>
-            <span className="max-mm:text-[13px] max-xsml:text-[10px]">TypeScript</span>
+        <div className="w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start">
+            <Image alt="next" src={scss} className="w-[40px] h-[40px]"/>
+            <span className="techName mt-[40px]">Sass</span>
+            <span className="techDescription w-full mt-[20px]">Sass — это метаязык на основе CSS, предназначенный для увеличения уровня абстракции CSS-кода</span>         
         </div>
-        <div className="flex flex-col items-center justify-center">
-            <Image src={strapi} alt="react" className="w-[60px] h-[60px] max-mm:w-[40px] max-mm:h-[40px] "/>
-            <span className="max-mm:text-[13px] max-xsml:text-[10px]">Strapi</span>
+        <div className="w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start">
+            <Image alt="next" src={jest} className="w-[40px] h-[40px]"/>
+            <span className="techName mt-[40px]">Jest</span>
+            <span className="techDescription w-full mt-[20px]">Jest — это фреймворк для тестирования JavaScript, разработанный для обеспечения уверенности в правильной работе любого JavaScript кода</span>         
         </div>
-        <div className="flex flex-col items-center justify-center">
-            <Image src={redux} alt="react" className="w-[60px] h-[60px] max-mm:w-[40px] max-mm:h-[40px]"/>
-            <span className="max-mm:text-[13px] max-xsml:text-[10px]">Redux</span>
+        <div className="w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start">
+            <Image alt="next" src={mobx} className="w-[40px] h-[40px]"/>
+            <span className="techName mt-[40px]">MobX</span>
+            <span className="techDescription w-full mt-[20px]">MobX — это автономная библиотека, для управления фронтенд‑состоянием приложения.</span>         
         </div>
-        </div>
-        <div className="flex flex-row w-[50%] justify-between items-center ml-[10px] max-ipad:w-full max-ipad:ml-[0px]">
-        <div className="flex flex-col items-center justify-center">
-            <Image src={next} alt="react" className="w-[60px] h-[60px] max-mm:w-[40px] max-mm:h-[40px]"/>
-            <span className="max-mm:text-[13px] max-xsml:text-[10px]">Next.js</span>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-            <Image src={sass} alt="react" className="w-[60px] h-[60px] max-mm:w-[40px] max-mm:h-[40px]"/>
-            <span className="max-mm:text-[13px] max-xsml:text-[10px]">Sass</span>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-            <Image src={jest} alt="react" className="w-[60px] h-[60px] max-mm:w-[40px] max-mm:h-[40px] "/>
-            <span className="max-mm:text-[13px] max-xsml:text-[10px]">Jest</span>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-            <Image src={storybook} alt="react" className="w-[60px] h-[60px] max-mm:w-[40px] max-mm:h-[40px] "/>
-            <span className="max-mm:text-[13px] max-xsml:text-[10px]">Storybook</span>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-            <Image src={mobx} alt="react" className="w-[60px] h-[60px] max-mm:w-[40px] max-mm:h-[40px]"/>
-            <span className="max-mm:text-[13px] max-xsml:text-[10px]">MobX</span>
+        <div className="w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start">
+            <Image alt="next" src={sb} className="w-[40px] h-[40px]"/>
+            <span className="techName mt-[40px]">Story Book</span>
+            <span className="techDescription w-full mt-[20px]">Storybook — это инструмент JavaScript для организации пользовательских интерфейсов</span>         
         </div>
         </div>
     </div>

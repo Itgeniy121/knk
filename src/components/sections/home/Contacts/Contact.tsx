@@ -7,11 +7,11 @@ const Contact = () => {
         <span className={cl.main}>contact with us</span>
         <span className='absolute top-[-50px] left-[140px] max-l:text-[80px] max-l:left-[100px] max-ipad:text-[65px] max-ipad:top-[-35px] max-ipad:left-[100px] max-mm:text-[40px] max-mm:top-[-15px] max-sml:left-[60px] max-xsml:text-[27px] max-ssml:left-[30px]'>связь с нами</span>
       </h2>
-      <div className='flex flex-row justify-between items-center w-[80%] h-[200px] max-xsml:flex-col max-xsml:h-[140px] max-xsml:w-full'>
-        <button className='border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md hover:shadow-white'>
+      <div className='flex flex-row justify-between items-center w-[70%] h-[200px] max-xsml:flex-col max-xsml:h-[140px] max-xsml:w-full'>
+        <button className='border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md hover:bg-white hover:text-[#191919] duration-300'>
           <span className={cl.buttons}>Написать нам</span>
         </button>
-        <button className='border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md hover:shadow-white'>
+        <button className='border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md hover:bg-white hover:text-[#191919] duration-300'>
           <span className={cl.buttons}>Обсудить проект</span>
         </button>
       </div>

@@ -22,31 +22,19 @@ const TechStack = () => {
         pagination={{ clickable: true }}
         navigation
         modules={[Navigation, Pagination, A11y]}
-        className="max-ipad:h-[430px] max-mm:h-[410px] max-sml:h-[370px] max-xsml:h-[340px]"
+        className="h-[740px] max-s:h-[570px]"
         >
-            <SwiperSlide className="flex items-center justify-center">
-                <div className="w-full h-[370px] flex items-center justify-center">
-                    <div className="w-[70%] h-full flex flex-col items-center justify-start rounded-[7px] pt-[40px]">
-                        <span className="techName">frontend.</span>
-                        <FrontendStack/>
-                    </div>
-                </div>
+            <SwiperSlide className="flex flex-col items-center justify-center w-full px-[50px]">
+                <h2 className='flex items-center justify-center text-[30px] mb-[40px]'>frontend</h2>
+                <FrontendStack/>
             </SwiperSlide>
-            <SwiperSlide className="flex items-center justify-center">
-                <div className="w-full h-[370px] flex items-center justify-center">
-                    <div className="w-[70%] h-full flex flex-col items-center justify-start rounded-[7px] pt-[40px]">
-                        <span className="techName">backend.</span>
-                        <BackendStack/>
-                    </div>
-                </div>
+            <SwiperSlide className="flex flex-col items-center justify-center w-full px-[50px]">
+                <h2 className='flex items-center justify-center text-[30px] mb-[40px]'>backend</h2>
+                <BackendStack/>
             </SwiperSlide>
-            <SwiperSlide className="flex items-center justify-center">
-                <div className="w-full h-[370px] flex items-center justify-center">
-                    <div className="w-[70%] h-full flex flex-col items-center justify-start rounded-[7px] pt-[40px]">
-                        <span className="techName">design.</span>
-                        <DesignStack/>
-                    </div>
-                </div>
+            <SwiperSlide className="flex flex-col items-center justify-center w-full px-[50px]">
+                <h2 className='flex items-center justify-center text-[30px] mb-[40px]'>design</h2>
+                <DesignStack/>
             </SwiperSlide>
         </Swiper>
     </div>

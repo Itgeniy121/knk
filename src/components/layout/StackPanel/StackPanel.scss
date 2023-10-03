@@ -3,13 +3,13 @@
     height: 70px;
     background-color: #2f2e31;
     border-radius: 7px;
-    border: 2px solid white;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     overflow-y: auto;
     padding-left: 10px;
+    margin-top: 20px;
 }
 .techLogo{
     width: 45px;
@@ -30,7 +30,7 @@
         height: 60px;
         background-color: #2f2e31;
         border-radius: 7px;
-        border: 2px solid white;
+        border: none;
         display: flex;
         flex-direction: row;
         justify-content: start;
