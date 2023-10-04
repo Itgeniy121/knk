@@ -27,7 +27,7 @@ const AboutUs = () => {
         <li className='max-w-[600px]'>- <span className='font-extrabold'>knk web</span> - опытная команда разработчиков, которая специализируется на создании и продвижении сайтов.</li>
         <li className='max-w-[600px]'>- Мы помогаем бизнесу клиентов расти и развиваться.</li>
         <li className='max-w-[600px]'>- В работе используем самые современные инструменты, позволяющие выполнять работу быстро и качественно</li>
-        <li className='max-w-[600px]'> - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+        <li className='max-w-[600px]'> - Мы ценим надежные и долгосрочные отношения</li>
 
       </ul>
     </section>

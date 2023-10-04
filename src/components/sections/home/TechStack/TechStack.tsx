@@ -1,6 +1,6 @@
 "use client"
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Navigation, Pagination} from 'swiper/modules';
 import FrontendStack from "./components/FrontendStack";
 import BackendStack from "./components/BackendStack";
 import DesignStack from "./components/DesignStack";
@@ -21,8 +21,8 @@ const TechStack = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
         navigation
-        modules={[Navigation, Pagination, A11y]}
-        className="h-[740px] max-s:h-[570px]"
+        modules={[Navigation, Pagination]}
+        className="h-[740px] max-s:h-[570px] max-sml:h-[450px]"
         >
             <SwiperSlide className="flex flex-col items-center justify-center w-full px-[50px]">
                 <h2 className='flex items-center justify-center text-[30px] mb-[40px]'>frontend</h2>

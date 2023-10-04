@@ -9,8 +9,8 @@ const Portfolio = () => {
       <h2 className={cl.title}>
         <span className={cl.raboti}>Наши работы</span>
       </h2>
-      <Case2 />
       <Case1 />
+      <Case2 />
       <Case3 />
     </div>
   );
