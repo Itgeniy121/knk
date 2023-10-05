@@ -1,12 +1,16 @@
+"use client"
 import React from "react";
-import ItCompas from "../../../../../../assets/imgs/ItCompas.png"
+import ItCompas from "../../../../../../assets/imgs/ItCompas.png";
 import Image from "next/image";
+import Tilt from "react-parallax-tilt";
 import cl from "../Portfolio.module.scss";
 const Case2 = () => {
   return (
     <div className='flex flex-row-reverse justify-between items-start mb-[150px] mt-[40px] max-ipad:flex-col max-sml:mb-[50px]'>
       <div className='flex flex-col w-[55%] h-full max-ipad:w-full'>
-        <Image src={ItCompas} alt='bestOffer' className='w-full' />
+        <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
+          <Image src={ItCompas} alt='bestOffer' className='w-full' />
+        </Tilt>
       </div>
       <div className='flex flex-col items-start w-[45%] h-full justify-start pb-[40px] pl-[50px] max-ipad:w-full max-ipad:pl-[0px] max-ipad:pt-[35px]'>
         <div className='flex flex-col mr-[50px]'>
