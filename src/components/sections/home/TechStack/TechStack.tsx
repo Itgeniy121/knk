@@ -21,7 +21,8 @@ const TechStack = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
         navigation
-        modules={[Navigation, Pagination]}
+        allowTouchMove={false}
+        modules={[ Navigation, Pagination]}
         className="h-[740px] max-s:h-[570px] max-sml:h-[450px]"
         >
             <SwiperSlide className="flex flex-col items-center justify-center w-full px-[50px]">

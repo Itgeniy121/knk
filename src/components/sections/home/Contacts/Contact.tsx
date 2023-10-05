@@ -17,10 +17,10 @@ const Contact = () => {
           связь с нами
         </span>
       </h2>
-      <div className='flex flex-row justify-between items-center w-[70%] h-[200px] max-xsml:flex-col max-xsml:h-[140px] max-xsml:w-full'>
-        <button className='border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md hover:bg-white hover:text-[#191919] duration-300'>
+      <div className='flex flex-row-reverse justify-between items-center w-[70%] h-[200px] max-xsml:flex-col-reverse max-xsml:h-[140px] max-xsml:w-full'>
+        <a href="https://t.me/idntnow" className=' flex justify-center items-center border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md hover:bg-white hover:text-[#191919] duration-300'>
           <span className={cl.buttons}>Написать нам</span>
-        </button>
+        </a>
         <button
           onClick={openModal}
           className='border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md hover:bg-white hover:text-[#191919] duration-300'
@@ -47,7 +47,7 @@ const Contact = () => {
           href='mailto:kantorin.ilya@yandex.ru'
           className='flex flex-col w-[25%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
         >
-          <span className={cl.socials}>Gmail</span>
+          <span className={cl.socials}>Email</span>
           <span className={cl.link}>kantorin.ilya@yandex.ru</span>
         </a>
         <a
