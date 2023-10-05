@@ -2,66 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 html {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
   overflow-x: hidden;
 }
 
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
   display: none;
 }
 
-html, body {
-  font-family: 'Montserrat', sans-serif;
+html,
+body {
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
   background: #191919;
-  color: #fcfcfc; }
+  color: #fcfcfc;
+}
 
 .head_text {
   @apply text-3xl text-center font-extrabold leading-[1.15] text-[#fafafa] sm:text-5xl #{!important};
 }
-
-
 
 .container {
   max-width: 1410px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 .content__container {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+}
 
-h1, h2, h3, h4, h5, h6, p {
-  font-size: inherit; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+}
 
-input, button {
+input,
+button {
   font-family: inherit;
   font-size: inherit;
 }
 
-input:focus, button:focus {
-  outline: none; }
+input:focus,
+button:focus {
+  outline: none;
+}
 
-ul, li {
-  list-style: none; }
+ul,
+li {
+  list-style: none;
+}

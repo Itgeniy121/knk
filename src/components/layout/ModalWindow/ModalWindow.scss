@@ -1,0 +1,80 @@
+.hide {
+    display: none !important;
+  }
+  .authModal {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .active {
+    display: flex !important;
+  }
+  .imgBg{
+    background-color: #1b1b1b;
+  }
+  .base-input {
+    background: none;
+    border-bottom: 2px solid gray;
+    color: white;
+    font-size: 14px;
+    width: 93%;
+    height: 30px;
+  }
+  .base-area{
+    background: none;
+    border: 2px solid gray;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    width: 93%;
+    height: 170px;
+    padding: 10px;
+    resize: none;
+  }
+  .error {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    color: rgb(166, 41, 41);
+  }
+  .modalTitle{
+    font: 800 30px Arial;
+    margin-bottom: 10px;
+  }
+  .desc{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 555px) {
+    .modalTitle{
+        font: 800 20px Arial;
+        margin-bottom: 10px;
+      }
+      .desc{
+        font-size: 15px;
+        color: white;
+        margin-bottom: 5px;
+      }
+      .base-input {
+        background: none;
+        border-bottom: 2px solid gray;
+        color: white;
+        font-size: 12px;
+        width: 93%;
+        height: 20px;
+      }
+      .base-area{
+        background: none;
+        border: 2px solid gray;
+        border-radius: 4px;
+        color: white;
+        font-size: 10px;
+        width: 93%;
+        height: 170px;
+        padding: 10px;
+        resize: none;
+      }
+      .error {
+        font-family: "Montserrat", sans-serif;
+        font-size: 9px;
+        color: rgb(166, 41, 41);
+      }
+  }
