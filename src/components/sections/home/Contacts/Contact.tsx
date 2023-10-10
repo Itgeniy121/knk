@@ -23,9 +23,9 @@ const Contact = () => {
         </a>
         <button
           onClick={openModal}
-          className='border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md hover:bg-white hover:text-[#191919] duration-300'
+          className='border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md bg-white hover:bg-[#191919] hover:text-white text-[#191919]  duration-300'
         >
-          <span className={cl.buttons}>Обсудить проект</span>
+          <span id="contacts" className={cl.buttons}>Обсудить проект</span>
         </button>
       </div>
       <div className='flex flex-row justify-between items-center w-[80%] h-[200px] max-xsml:w-[95%]'>

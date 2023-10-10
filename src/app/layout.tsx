@@ -1,6 +1,7 @@
 import '../../assets/style/style.scss'
 import type { Metadata } from 'next'
 import ProgressBar from "@/components/layout/ProgressBar/ProgressBar";
+import ContactButton from '@/components/layout/ContactButton/ContactButton';
 
 export const metadata: Metadata = {
   title: 'Создание сайта под ключ',
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
       <ProgressBar/>
+      <ContactButton/>
       {children}
       </body>
     </html>

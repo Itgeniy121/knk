@@ -1,0 +1,18 @@
+.btn {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  border: 2px solid white;
+  background-color: #191919;
+  z-index: 99999999999;
+}
+.text {
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (max-width: 800px) {
+    .text{
+        font-size: 13px;
+  font-weight: 500;
+    }
+  }
