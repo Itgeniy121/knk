@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from 'react-toastify';
 import { useForm, SubmitHandler } from "react-hook-form";
 import "../ModalWindow/ModalWindow.scss";
 interface formTypes {
@@ -10,17 +11,22 @@ const ModalWindow = () => {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [description, setDescription] = useState("");
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm<formTypes>();
+  const {register, handleSubmit, formState: { errors }, reset} = useForm<formTypes>();
   const handler = () => {
     let modal = document.getElementById("modal");
     modal?.classList.remove("active");
   };
   const onSubmit: SubmitHandler<formTypes> = () => {
+    //Тут кода запроса
+    toast('Благодарим за форму. Мы скоро с вами свяжемся!', {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      theme: "dark",
+      });
     let modal = document.getElementById("modal");
     modal?.classList.remove("active");
     reset({
