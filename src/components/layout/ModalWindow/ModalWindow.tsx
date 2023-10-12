@@ -23,11 +23,11 @@ const ModalWindow = () => {
   };
   const onSubmit: SubmitHandler<formTypes> = async () => {
     const data : formTypes = {
-      name: name,
-      phone: phoneNumber,
-      text: description,
+      "name": name,
+      "phone": phoneNumber,
+      "text": description,
     };
-    const response = await fetch("http://localhost:3001/", {
+    const response = await fetch("https://knkweb.ru/api", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
