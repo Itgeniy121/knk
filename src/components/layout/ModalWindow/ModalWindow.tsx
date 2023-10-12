@@ -1,38 +1,67 @@
 import { useState } from "react";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import { useForm, SubmitHandler } from "react-hook-form";
 import "../ModalWindow/ModalWindow.scss";
 interface formTypes {
   name: string;
   phone: string;
-  description: string;
+  text: string;
 }
 const ModalWindow = () => {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [description, setDescription] = useState("");
-  const {register, handleSubmit, formState: { errors }, reset} = useForm<formTypes>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<formTypes>();
   const handler = () => {
     let modal = document.getElementById("modal");
     modal?.classList.remove("active");
   };
-  const onSubmit: SubmitHandler<formTypes> = () => {
-    //Тут кода запроса
-    toast('Благодарим за форму. Мы скоро с вами свяжемся!', {
-      position: "top-right",
-      autoClose: 4000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: false,
-      draggable: true,
-      theme: "dark",
+  const onSubmit: SubmitHandler<formTypes> = async () => {
+    const data : formTypes = {
+      name: name,
+      phone: phoneNumber,
+      text: description,
+    };
+    const response = await fetch("http://localhost:3001/", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+      },
+    });
+    if( response.ok) {
+      toast("Благодарим за вашу заявку! Свяжемся с вами в ближайшее время.", {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        theme: "dark",
       });
+    }else{
+      toast.error('Что-то пошло не так.', {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+    }
     let modal = document.getElementById("modal");
     modal?.classList.remove("active");
     reset({
       phone: "",
       name: "",
-      description: "",
+      text: "",
     });
   };
   return (
@@ -43,7 +72,7 @@ const ModalWindow = () => {
     >
       <div
         onClick={e => e.stopPropagation()}
-        className='imgBg w-[550px] h-[630px] rounded-[10px] z-[99999999] max-mm:w-[400px] max-xsml:w-[280px] max-xsml:h-[550px]'
+        className='imgBg w-[550px] h-[630px] rounded-[10px] z-[99999] max-mm:w-[400px] max-xsml:w-[280px] max-xsml:h-[550px]'
       >
         <div className='flex flex-col justify-start items-start w-full h-full pl-[30px] pt-[20px]'>
           <span className='modalTitle'>Обратная форма</span>
@@ -81,14 +110,14 @@ const ModalWindow = () => {
             <p className='desc'>Опишите ваш проект</p>
             <textarea
               className='base-area'
-              {...register("description", {
+              {...register("text", {
                 required:
                   "Опишите, как должен выглядить проект, это важно для нас",
               })}
               onChange={e => setDescription(e.target.value)}
             />
-            {errors?.description && (
-              <div className='error'>{errors.description.message}</div>
+            {errors?.text && (
+              <div className='error'>{errors.text.message}</div>
             )}
           </div>
           <button
