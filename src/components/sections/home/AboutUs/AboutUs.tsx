@@ -16,7 +16,7 @@ const AboutUs = () => {
     })
   }
   return (
-    <motion.section initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.2}} className='mb-40 container flex sm:flex-row flex-col sm:gap-0 gap-10 max-s:justify-center max-s:items-center'>
+    <motion.section initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.3}} className='mb-40 container flex sm:flex-row flex-col sm:gap-0 gap-10 max-s:justify-center max-s:items-center'>
       <div className='flex-[50%] flex items-center justify-center relative'>
         <h2 className='about__outlined-text '>
           <span className='sm:block hidden'>

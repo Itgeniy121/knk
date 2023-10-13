@@ -15,7 +15,7 @@ const OurServices = () => {
     })
   }
   return (
-    <motion.div initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.1}} className='mb-40 container flex flex-col items-center'>
+    <motion.div initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.3}} className='mb-40 container flex flex-col items-center'>
       <div className='flex items-center gap-20 max-med:gap-10 max-ssml:gap-4 max-ssml:mb-[20px] max-xsml:gap-[25px]'>
         <motion.span custom={1} variants={textAnimation} className={cl.spectr}>СПЕКТР</motion.span>
         <motion.h2 custom={1} variants={textAnimation} className='text-[160px] font-semibold flex-[50%] max-s:text-[120px] max-med:text-[90px] max-xsml:text-[70px] max-ssml:text-[45px]'>УСЛУГ:</motion.h2>

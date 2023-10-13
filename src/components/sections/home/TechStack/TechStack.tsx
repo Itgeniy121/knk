@@ -28,7 +28,7 @@ const TechStack = () => {
       <motion.h2
         initial='hidden'
         whileInView='visible'
-        viewport={{ once: true, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.3 }}
         className='title'
       >
         <motion.span custom={1} variants={textAnimation}>

@@ -40,7 +40,7 @@ const Contact = () => {
           <span id="contacts" className={cl.buttons}>Обсудить проект</span>
         </button>
       </div>
-      <motion.div initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.1 }} className='flex flex-row justify-between items-center w-[80%] h-[200px] max-xsml:w-[95%]'>
+      <motion.div initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.3 }} className='flex flex-row justify-between items-center w-[80%] h-[200px] max-xsml:w-[95%]'>
         <motion.a
           href='https://t.me/knkweb'
           custom={1} variants={textAnimation}
