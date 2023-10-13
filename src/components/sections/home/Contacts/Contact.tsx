@@ -1,9 +1,21 @@
 "use client";
+import { motion } from "framer-motion";
 import cl from "./Contact.module.scss";
 import React from "react";
 import "@/components/layout/ModalWindow/ModalWindow.scss";
 import ModalWindow from "@/components/layout/ModalWindow/ModalWindow";
 const Contact = () => {
+  const textAnimation = {
+    hidden: {
+      y: -100,
+      opacity: 0,
+    },
+    visible: (custom: any) => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.1 },
+    }),
+  };
   const openModal = () => {
     const modal = document.getElementById("modal");
     modal?.classList.add("active");
@@ -28,36 +40,40 @@ const Contact = () => {
           <span id="contacts" className={cl.buttons}>Обсудить проект</span>
         </button>
       </div>
-      <div className='flex flex-row justify-between items-center w-[80%] h-[200px] max-xsml:w-[95%]'>
-        <a
+      <motion.div initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.1 }} className='flex flex-row justify-between items-center w-[80%] h-[200px] max-xsml:w-[95%]'>
+        <motion.a
           href='https://t.me/knkweb'
+          custom={1} variants={textAnimation}
           className='flex flex-col w-[20%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
         >
           <span className={cl.socials}>Telegram</span>
           <span className={cl.link}>@idntnow</span>
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href='https://www.youtube.com/@knkwebstudio'
+          custom={2} variants={textAnimation}
           className='flex flex-col w-[15%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
         >
           <span className={cl.socials}>YouTube</span>
           <span className={cl.link}>knkweb.</span>
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href='mailto:kantorin.ilya@yandex.ru'
+          custom={3} variants={textAnimation}
           className='flex flex-col w-[25%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
         >
           <span className={cl.socials}>Email</span>
           <span className={cl.link}>kantorin.ilya@yandex.ru</span>
-        </a>
-        <a
+        </motion.a>
+        <motion.a
+        custom={4} variants={textAnimation}
           href='tel:+79144054140'
           className='flex flex-col w-[20%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
         >
           <span className={cl.socials}>Phone</span>
           <span className={cl.link}>+79144054140</span>
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
     </div>
   );
 };

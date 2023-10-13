@@ -1,12 +1,24 @@
+"use client"
 import React from 'react';
 import cl from './OurServices.module.scss'
-
+import { motion } from 'framer-motion';
 const OurServices = () => {
+  const textAnimation = {
+    hidden: {
+      y: -100,
+      opacity: 0,
+    },
+    visible: (custom: any) => ({
+      y: 0,
+      opacity: 1,
+      transition: {delay: custom * 0.1}
+    })
+  }
   return (
-    <div className='mb-40 container flex flex-col items-center'>
+    <motion.div initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.1}} className='mb-40 container flex flex-col items-center'>
       <div className='flex items-center gap-20 max-med:gap-10 max-ssml:gap-4 max-ssml:mb-[20px] max-xsml:gap-[25px]'>
-        <span className={cl.spectr}>СПЕКТР</span>
-        <h2 className='text-[160px] font-semibold flex-[50%] max-s:text-[120px] max-med:text-[90px] max-xsml:text-[70px] max-ssml:text-[45px]'>УСЛУГ:</h2>
+        <motion.span custom={1} variants={textAnimation} className={cl.spectr}>СПЕКТР</motion.span>
+        <motion.h2 custom={1} variants={textAnimation} className='text-[160px] font-semibold flex-[50%] max-s:text-[120px] max-med:text-[90px] max-xsml:text-[70px] max-ssml:text-[45px]'>УСЛУГ:</motion.h2>
       </div>
       <div className='flex w-full justify-between mb-10 max-sml:flex-col'>
         <div className='flex flex-col w-[49%] self-start p-8 border-2 border-white rounded-[40px] relative z-10 max-med:h-full max-sml:w-full max-sml:mb-10'>
@@ -44,7 +56,7 @@ const OurServices = () => {
       <div className='w-full border-2 border-white rounded-[40px] p-10 text-[40px] font-semibold flex flex-col max-ssml:text-[28px]'>
         Техническая поддержка сайта
       </div>
-    </div>
+    </motion.div>
   );
 };
 
