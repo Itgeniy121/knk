@@ -28,7 +28,7 @@ const Case3 = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "250px", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{duration: 0.5}}
+            transition={{duration: 0.8}}
             className='w-full flex flex-col justify-between items-start max-xsml:!h-[200px]'
           >
             <div className='flex flex-row justify-between items-center w-full mt-[25px]'>

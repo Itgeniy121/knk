@@ -14,7 +14,7 @@ const Portfolio = () => {
     visible: (custom: any) => ({
       y: 0,
       opacity: 1,
-      transition: {delay: custom * 0.1, duration: 0.5}
+      transition: {delay: custom * 0.1, duration: 0.8}
     })
   }
   return (
