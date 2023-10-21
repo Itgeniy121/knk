@@ -18,7 +18,7 @@ const BackendStack = () => {
           <span className='techDescription w-full mt-[20px]'>
             Node или Node.js — программная платформа, основанная на движке V8,
             превращающая JavaScript из узкоспециализированного языка в язык
-            общего назначения
+            общего назначения.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -33,7 +33,7 @@ const BackendStack = () => {
           <span className='techName mt-[40px] max-sml:mt-[25px]'>Expresx.js</span>
           <span className='techDescription w-full mt-[20px]'>
             Express — фреймворк web-приложений для Node.js, реализованный как
-            свободное и открытое программное обеспечение
+            свободное и открытое программное обеспечение.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -51,7 +51,7 @@ const BackendStack = () => {
           <span className='techName mt-[40px] max-sml:mt-[25px]'>Docker</span>
           <span className='techDescription w-full mt-[20px]'>
             Docker — программное обеспечение для автоматизации развёртывания и
-            управления приложениями
+            управления приложениями.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -59,7 +59,7 @@ const BackendStack = () => {
           <span className='techName mt-[40px] max-sml:mt-[25px]'>FireBase</span>
           <span className='techDescription w-full mt-[20px]'>
             Firebase - это облачная база данных, которая позволяет пользователям
-            хранить и получать сохраненную информацию
+            хранить и получать сохраненную информацию.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -68,7 +68,7 @@ const BackendStack = () => {
           <span className='techDescription w-full mt-[20px]'>
             GraphQL — язык запросов данных и язык манипулирования данными с
             открытым исходным кодом для построения веб ориентированных
-            программных интерфейсов
+            программных интерфейсов.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -76,7 +76,7 @@ const BackendStack = () => {
           <span className='techName mt-[40px] max-sml:mt-[25px]'>Nginx</span>
           <span className='techDescription w-full mt-[20px]'>
             Nginx — веб-сервер и почтовый прокси-сервер, работающий на
-            Unix-подобных операционных системах
+            Unix-подобных операционных системах.
           </span>
         </div>
       </div>

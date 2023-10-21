@@ -44,7 +44,7 @@ const Contact = () => {
         <motion.a
           href='https://t.me/knkweb'
           custom={1} variants={textAnimation}
-          className='flex flex-col w-[18%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
+          className='flex flex-col w-[20%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
         >
           <span className={cl.socials}>Telegram</span>
           <span className={cl.link}>@idntnow</span>
@@ -52,7 +52,7 @@ const Contact = () => {
         <motion.a
           href='https://www.youtube.com/@knkwebstudio'
           custom={2} variants={textAnimation}
-          className='flex flex-col w-[18%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
+          className='flex flex-col w-[15%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
         >
           <span className={cl.socials}>YouTube</span>
           <span className={cl.link}>knkweb.</span>
@@ -60,7 +60,7 @@ const Contact = () => {
         <motion.a
           href='mailto:kantorin.ilya@yandex.ru'
           custom={3} variants={textAnimation}
-          className='flex flex-col w-[18%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
+          className='flex flex-col w-[25%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
         >
           <span className={cl.socials}>Email</span>
           <span className={cl.link}>kantorin.ilya@yandex.ru</span>
@@ -68,7 +68,7 @@ const Contact = () => {
         <motion.a
         custom={4} variants={textAnimation}
           href='tel:+79144054140'
-          className='flex flex-col w-[18%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
+          className='flex flex-col w-[20%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
         >
           <span className={cl.socials}>Phone</span>
           <span className={cl.link}>+79144054140</span>

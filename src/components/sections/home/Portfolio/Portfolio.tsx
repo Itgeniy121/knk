@@ -20,7 +20,7 @@ const Portfolio = () => {
   return (
     <motion.div initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.1}} className='container flex flex-col mb-[100px]'>
       <h2 className={cl.title}>
-        <motion.span custom={3} variants={textAnimation} className={cl.raboti}>Наши работы</motion.span>
+        <motion.span custom={1} variants={textAnimation} className={cl.raboti}>Наши работы</motion.span>
       </h2>
       <Case1 />
       <Case2 />

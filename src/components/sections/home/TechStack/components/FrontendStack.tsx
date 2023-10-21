@@ -26,7 +26,7 @@ const FrontendStack = () => {
           <span className='techName mt-[40px] max-sml:mt-[25px]'>React.js</span>
           <span className='techDescription w-full mt-[20px]'>
             React — JavaScript-библиотека с открытым исходным кодом для
-            разработки пользовательских интерфейсов
+            разработки пользовательских интерфейсов.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -42,7 +42,7 @@ const FrontendStack = () => {
           <span className='techName mt-[40px] max-sml:mt-[25px]'>Next.js</span>
           <span className='techDescription w-full mt-[20px]'>
             Next.js — открытый JavaScript фреймворк, созданный поверх React.js
-            для создания веб-приложений
+            для создания веб-приложений.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -58,7 +58,7 @@ const FrontendStack = () => {
           <span className='techName mt-[40px] max-sml:mt-[25px]'>Tailwind css</span>
           <span className='techDescription w-full mt-[20px]'>
             {" "}
-            TailwindCSS – это CSS-библиотека, которая упрощает стилизацию HTML
+            TailwindCSS – это CSS-библиотека, которая упрощает стилизацию HTML.
           </span>
         </div>
       </div>
@@ -67,7 +67,7 @@ const FrontendStack = () => {
           <Image alt='next' src={strapi} className='w-[40px] h-[40px]' />
           <span className='techName mt-[40px] max-sml:mt-[25px]'>Strapi</span>
           <span className='techDescription w-full mt-[20px]'>
-            Strapi - фреймворк для управления контентом, работающий на Node.js
+            Strapi - фреймворк для управления контентом, работающий на Node.js.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -75,7 +75,7 @@ const FrontendStack = () => {
           <span className='techName mt-[40px] max-sml:mt-[25px]'>Sass</span>
           <span className='techDescription w-full mt-[20px]'>
             Sass — это метаязык на основе CSS, предназначенный для увеличения
-            уровня абстракции CSS-кода
+            уровня абстракции CSS-кода.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -83,7 +83,7 @@ const FrontendStack = () => {
           <span className='techName mt-[40px] max-sml:mt-[25px]'>Jest</span>
           <span className='techDescription w-full mt-[20px]'>
             Jest — это фреймворк для тестирования JavaScript, разработанный для
-            обеспечения уверенности в правильной работе любого JavaScript кода
+            обеспечения уверенности в правильной работе любого JavaScript кода.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -99,7 +99,7 @@ const FrontendStack = () => {
           <span className='techName mt-[40px] max-sml:mt-[25px]'>Story Book</span>
           <span className='techDescription w-full mt-[20px]'>
             Storybook — это инструмент JavaScript для организации
-            пользовательских интерфейсов
+            пользовательских интерфейсов.
           </span>
         </div>
       </div>
