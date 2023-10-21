@@ -75,3 +75,8 @@ li {
 .Toastify__progress-bar-theme--dark {
   background: var(--toastify-text-color-warning) !important;
 }
+
+.rotate{
+  transform: rotate(180deg);
+
+}

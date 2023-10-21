@@ -6,6 +6,8 @@ const Case4 = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleVisible = () => {
+    const arrow = document.getElementById("arr4")
+    arrow?.classList.toggle("rotate")
     setIsVisible(!isVisible);
   };
   return (
@@ -13,8 +15,9 @@ const Case4 = () => {
       <div className='w-full h-[120px] border-b-[3px] flex items-center justify-between px-[10px] max-med:h-[90px] max-xsml:border-b-[1.5px] max-xsml:h-[70px]'>
         <span className='text-[50px] pt-[30px] max-s:text-[40px] max-med:text-[27px] max-xsml:text-[19px] max-ssml:text-[15px]'>Разработка UX/UI-дизайна</span>{" "}
         <Image
+        id="arr4"
           onClick={handleVisible}
-          className='w-[35px] h-[35px] cursor-pointer max-sm:w-[25px] max-sm:h-[25px] mt-[30px]'
+          className='w-[35px] h-[35px] cursor-pointer max-sm:w-[25px] max-sm:h-[25px] mt-[30px] duration-500'
           src={arrow}
           alt='aaa'
         ></Image>
