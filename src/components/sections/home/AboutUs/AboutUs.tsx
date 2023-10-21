@@ -12,7 +12,7 @@ const AboutUs = () => {
     visible: (custom: any) => ({
       x: 0,
       opacity: 1,
-      transition: {delay: custom * 0.25}
+      transition: {delay: custom * 0.25, duration: 0.5}
     })
   }
   return (

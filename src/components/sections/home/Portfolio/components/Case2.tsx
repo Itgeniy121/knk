@@ -14,7 +14,7 @@ const Case2 = () => {
     visible: (custom: any) => ({
       x: 0,
       opacity: 1,
-      transition: {delay: custom * 0.3}
+      transition: {delay: custom * 0.3, duration: 0.5}
     })
   }
   return (
