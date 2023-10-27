@@ -1,3 +1,4 @@
+'use client'
 import MainTitle from "@/components/sections/home/MainTitle/MainTitle";
 import AboutUs from "@/components/sections/home/AboutUs/AboutUs";
 import OurServices from "@/components/sections/home/OurServices/OurServices";

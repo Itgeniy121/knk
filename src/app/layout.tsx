@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='en' id="main">
       <Head>
       <meta name="yandex-verification" content="3e041f65f948fbb7" />
       </Head>

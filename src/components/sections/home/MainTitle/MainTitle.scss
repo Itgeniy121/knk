@@ -7,6 +7,12 @@
   animation:2.5s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running main-logo;
   color: white;
 }
+.hide{
+  display: none;
+}
+.baz{
+  animation: cubic-bezier(1.000, 0.015, 1.000, 0.915);
+}
 
 @keyframes main-logo {
 

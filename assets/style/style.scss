@@ -22,6 +22,7 @@ body {
   background: #191919;
   color: #fcfcfc;
 }
+
 .container {
   max-width: 1410px;
   padding-right: 15px;
@@ -78,5 +79,7 @@ li {
 
 .rotate{
   transform: rotate(180deg);
-
+}
+.noScroll{
+  overflow-y: hidden;
 }
