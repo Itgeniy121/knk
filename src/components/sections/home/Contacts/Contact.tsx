@@ -30,7 +30,7 @@ const Contact = () => {
         </span>
       </h2>
       <div className='flex flex-row-reverse justify-between items-center w-[70%] h-[200px] max-xsml:flex-col-reverse max-xsml:h-[140px] max-xsml:w-full'>
-        <a href="https://t.me/idntnow" className=' flex justify-center items-center border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md hover:bg-white hover:text-[#191919] duration-300'>
+        <a target="_blank" href="https://t.me/idntnow" className=' flex justify-center items-center border-[2px] rounded-[70px] bg-none w-[450px] h-[100px] max-l:w-[320px] max-s:w-[270px] max-med:w-[180px] max-med:h-[50px] max-xsml:w-[280px] hover:shadow-md hover:bg-white hover:text-[#191919] duration-300'>
           <span className={cl.buttons}>Написать нам</span>
         </a>
         <button
@@ -42,6 +42,7 @@ const Contact = () => {
       </div>
       <motion.div initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.3 }} className='flex flex-row justify-between items-center w-[80%] h-[200px] max-xsml:w-[95%]'>
         <motion.a
+        target="_blank"
           href='https://t.me/knkweb'
           custom={1} variants={textAnimation}
           className='flex flex-col w-[18%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
@@ -50,6 +51,7 @@ const Contact = () => {
           <span className={cl.link}>@idntnow</span>
         </motion.a>
         <motion.a
+        target="_blank"
           href='https://www.youtube.com/@knkwebstudio'
           custom={2} variants={textAnimation}
           className='flex flex-col w-[18%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
@@ -58,6 +60,7 @@ const Contact = () => {
           <span className={cl.link}>knkweb.</span>
         </motion.a>
         <motion.a
+        target="_blank"
           href='mailto:kantorin.ilya@yandex.ru'
           custom={3} variants={textAnimation}
           className='flex flex-col w-[18%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
@@ -66,6 +69,7 @@ const Contact = () => {
           <span className={cl.link}>kantorin.ilya@yandex.ru</span>
         </motion.a>
         <motion.a
+        target="_blank"
         custom={4} variants={textAnimation}
           href='tel:+79144054140'
           className='flex flex-col w-[18%] justify-center items-start border-t-[2px] pt-[40px] max-xsml:pt-[20px] hover:underline'
