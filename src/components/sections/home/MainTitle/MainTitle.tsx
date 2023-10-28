@@ -9,23 +9,49 @@ const Title = () => {
   const { ref, inView, entry } = useInView({
     threshold: 0,
   });
-  useLayoutEffect(() =>{
-    if(window.screenY === 0 && typeof window !== undefined && window.pageYOffset == 0){
-      document.getElementById("main")?.classList.add('noScroll')
+  const animationForPc = (first: number, second: number) =>{
+    document.getElementById("main")?.classList.add('noScroll')
       window.addEventListener('wheel', () => {
         setIsVisible(true)
-        setTimeout(() => setIsVisible2(true), 670)
+        setTimeout(() => setIsVisible2(true), first)
         setTimeout(() =>{
           document.getElementById('needHide')?.classList.remove('hide')
           document.getElementById("main")?.classList.remove('noScroll')
-        }, 1250)
+        }, second)
       })
+  }
+  const animationForPhone = (first: number, second: number) =>{
+    document.getElementById("main")?.classList.add('noScroll')
+      window.addEventListener('touchmove', () => {
+        setIsVisible(true)
+        setTimeout(() => setIsVisible2(true), first)
+        setTimeout(() =>{
+          document.getElementById('needHide')?.classList.remove('hide')
+          document.getElementById("main")?.classList.remove('noScroll')
+        }, second)
+      })
+  }
+  useLayoutEffect(() =>{
+    if(window.screenY === 0 && typeof window !== undefined && window.pageYOffset == 0 && window.innerWidth >= 1024){
+      animationForPc(670, 1250)
+    }else if(window.screenY === 0 && typeof window !== undefined && window.pageYOffset == 0 && window.innerWidth <= 1024){
+      animationForPhone(670, 1250)
     }
   }, [])
   useEffect(()=>{
-    if(inView == true){
+    if(inView == true && window.innerWidth >= 1024){
       document.getElementById("main")?.classList.add('noScroll')
       window.addEventListener('wheel', () => {
+        setTimeout(() => setIsVisible(true), 1000)
+        setTimeout(() => setIsVisible2(true), 1670)
+        setTimeout(() =>{
+          document.getElementById('needHide')?.classList.remove('hide')
+          document.getElementById("main")?.classList.remove('noScroll')
+        }, 2250)
+      })
+    }else if(inView == true && window.innerWidth <= 1024){
+      document.getElementById("main")?.classList.add('noScroll')
+      window.addEventListener('touchmove', () => {
         setTimeout(() => setIsVisible(true), 1000)
         setTimeout(() => setIsVisible2(true), 1670)
         setTimeout(() =>{
