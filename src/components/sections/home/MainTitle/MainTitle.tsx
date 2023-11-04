@@ -3,6 +3,8 @@ import React, { useState, useLayoutEffect, useEffect } from 'react';
 import './MainTitle.scss'
 import { useInView } from 'react-intersection-observer';
 import { AnimatePresence, motion } from 'framer-motion';
+import Tittle from './components/Title';
+import Header from './components/Header';
 const Title = () => {
   const[isVisible, setIsVisible] = useState(false)
   const[isVisible2, setIsVisible2] = useState(false)
@@ -64,6 +66,7 @@ const Title = () => {
   return (
     <div
       className='w-screen h-screen flex-center flex-col items-center justify-center flex relative'
+
     >
       <div className='w-[1px] h-[1px] absolute top-0 bg-black' ref={ref}>
        </div>
@@ -78,8 +81,8 @@ const Title = () => {
     </AnimatePresence>
     <AnimatePresence>
       { isVisible2 && (
-      <motion.div initial={{height: 0}} animate={{height: '100vh'}} transition={{duration: 0.7}} exit={{y: '-100vh'}} className='flex justify-center items-center absolute w-full h-full bg-[#191919] overflow-hidden bottom-0 z-10 baz'>
-        <h1 id='needHide' className='main-logo2 lg:text-[100px] sm:text-[70px] text-[50px] mb-4 font-bold hide'>самолет себе хочу</h1>
+      <motion.div initial={{height: 0}} animate={{height: '100vh'}} transition={{duration: 0.7}} exit={{y: '-100vh'}} className='flex flex-col justify-center items-center absolute w-full h-full bg-[#191919] bottom-0 overflow-hidden z-10 baz'>
+        <Tittle/>
       </motion.div>
       )
       }

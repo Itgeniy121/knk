@@ -14,6 +14,9 @@
 .hide{
   display: none;
 }
+.downArrow{
+  transform: rotate(-90deg);
+}
 .baz{
   animation: cubic-bezier(1.000, 0.015, 1.000, 0.915);
 }

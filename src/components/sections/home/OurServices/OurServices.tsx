@@ -38,9 +38,6 @@ const OurServices = () => {
         <Case5/>
       </div>
       <div className='w-full flex items-start justify-start mt-[40px] max-xsml:mt-[20px]'>
-        <span className='w-[100%] text-[13px] text-gray-400 max-xsml:text-[9px]'>
-          ** Точные сроки проекта рассчитываются после его обсуждения **
-        </span>
       </div>
     </motion.div>
   );
