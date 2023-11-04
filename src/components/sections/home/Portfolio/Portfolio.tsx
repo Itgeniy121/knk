@@ -65,28 +65,28 @@ const Portfolio = () => {
       </h2>
       <motion.div ref={container} className="flex flex-row justify-start items-start w-full overflow-hidden">
         <motion.div className="left flex flex-col w-1/2 items-center" style={{y: yn}}>
-          <Image src={bf1} alt="bf" className="item"></Image>
-          <Image src={anes1} alt="bf" className="item"></Image>
+          <Image src={bf1} alt="bf" className="item max-md:w-[150px] max-md:h-[210px]"></Image>
+          <Image src={anes1} alt="bf" className="item max-md:w-[150px] max-md:h-[210px]"></Image>
           <div className="flex flex-col item">
-            <h1 className="text-[40px] font-[700] text-[#E1E1E1] mb-[12px]">Anescor</h1>
-            <p className="text-[15px] !font-[100px] text-[#D3D3D3]">Сайт представляет собой интернет-магазин по покупке комплектующих для производства и установки светопрозрачных конструкций.</p>
+            <h1 className="text-[40px] font-[700] text-[#E1E1E1] mb-[12px] max-md:text-[20px] max:mdfont-[600]">Anescor</h1>
+            <p className="text-[15px] !font-[100px] text-[#D3D3D3] max-md:text-[11px]">Сайт представляет собой интернет-магазин по покупке комплектующих для производства и установки светопрозрачных конструкций.</p>
           </div>
-          <Image src={anes2} alt="bf" className="item"></Image>
-          <Image src={komp1} alt="bf" className=" item"></Image>
+          <Image src={anes2} alt="bf" className="item max-md:w-[150px] max-md:h-[210px]"></Image>
+          <Image src={komp1} alt="bf" className=" item max-md:w-[210px] max-md:h-[170px]"></Image>
         </motion.div>
         <div className="right flex flex-col w-1/2 items-center">
           <div className="flex flex-col item">
-            <h1 className="text-[40px] font-[700] text-[#E1E1E1] mb-[12px]">BestOffer Store</h1>
-            <p className="text-[15px] !font-[100px] text-[#D3D3D3]">E-commerce проект BestOffer Store представляет собой современный интернет магазин одежды с возможностью обращения к владельцам для выкупа товара.</p>
+            <h1 className="text-[40px] font-[700] text-[#E1E1E1] mb-[12px] max-md:text-[20px] max:mdfont-[600]">BestOffer Store</h1>
+            <p className="text-[15px] !font-[100px] text-[#D3D3D3] max-md:text-[11px]">E-commerce проект BestOffer Store представляет собой современный интернет магазин одежды с возможностью обращения к владельцам для выкупа товара.</p>
           </div>
-          <Image src={bf2} alt="bf" className=" item"></Image>
-          <Image src={bf3} alt="bf" className=" item"></Image>
-          <Image src={anes3} alt="bf" className=" item"></Image>
+          <Image src={bf2} alt="bf" className=" item max-md:w-[150px] max-md:h-[210px]"></Image>
+          <Image src={bf3} alt="bf" className=" item max-md:w-[150px] max-md:h-[210px]"></Image>
+          <Image src={anes3} alt="bf" className=" item max-md:w-[150px] max-md:h-[210px]"></Image>
           <div className="flex flex-col item">
-            <h1 className="text-[40px] font-[700] text-[#E1E1E1] mb-[12px]">ИТ-КОМПАС</h1>
-            <p className="text-[15px] !font-[100px] text-[#D3D3D3]">Функциональный сервис для потенциальных и действующих IT-компаний. Сайт позволяет рассказать о своей компании и ее преимущиствах.</p>
+            <h1 className="text-[40px] font-[700] text-[#E1E1E1] mb-[12px] max-md:text-[20px] max:mdfont-[600]">ИТ-КОМПАС</h1>
+            <p className="text-[15px] !font-[100px] text-[#D3D3D3] max-md:text-[11px]">Функциональный сервис для потенциальных и действующих IT-компаний. Сайт позволяет рассказать о своей компании и ее преимущиствах.</p>
           </div>
-          <Image src={komp2} alt="bf" className=" item"></Image>
+          <Image src={komp2} alt="bf" className=" item max-md:w-[150px] max-md:h-[210px]"></Image>
         </div>
       </motion.div>
     </div>
