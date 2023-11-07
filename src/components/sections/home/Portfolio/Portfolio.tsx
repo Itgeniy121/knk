@@ -20,7 +20,7 @@ const Portfolio = () => {
     offset: ["start end", "end start"],
   });
   let yn;
-  if (window.innerWidth >= 700) {
+  if (window.innerWidth >= 700 && window.innerWidth != undefined) {
     yn = useTransform(scrollYProgress, [0, 1], [0, 1000]);
   } else {
     yn = useTransform(scrollYProgress, [0, 1], [0, 500]);
