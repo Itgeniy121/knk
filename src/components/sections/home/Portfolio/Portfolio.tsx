@@ -87,6 +87,7 @@ const Portfolio = () => {
     <div className='container'>
       <h2 id='portfolio' className='title'>
         <span className='raboti'>Наши работы</span>
+        <div></div>
       </h2>
       <motion.div
         ref={container}
