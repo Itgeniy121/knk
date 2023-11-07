@@ -10,22 +10,28 @@ import anes3 from "./imgs/anes3.png";
 import komp1 from "./imgs/komp1.png";
 import komp2 from "./imgs/komp2.png";
 import { useScroll, useTransform, motion } from "framer-motion";
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 const Portfolio = () => {
+  const[mobile, setMobile] = useState(false)
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start end", "end start"],
   });
   let yn;
-  if (window.innerWidth >= 700 && window.innerWidth != undefined) {
+  if (mobile === false) {
     yn = useTransform(scrollYProgress, [0, 1], [0, 1000]);
-  } else {
+  } else if (mobile === true) {
     yn = useTransform(scrollYProgress, [0, 1], [0, 500]);
   }
   useLayoutEffect(() => {
+    if (window.innerWidth >= 700 && typeof window !== undefined) {
+      setMobile(false)
+    } else if (window.innerWidth < 700 && typeof window !== undefined) {
+      setMobile(true)
+    }
     gsap.registerPlugin(ScrollTrigger);
     if (ScrollTrigger.isTouch !== 1) {
       gsap.fromTo(

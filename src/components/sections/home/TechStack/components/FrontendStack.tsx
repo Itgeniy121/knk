@@ -31,7 +31,9 @@ const FrontendStack = () => {
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
           <Image alt='ts' src={ts} className='w-[40px] h-[40px]' />
-          <span className='techName mt-[40px] max-sml:mt-[25px]'>TypeScript</span>
+          <span className='techName mt-[40px] max-sml:mt-[25px]'>
+            TypeScript
+          </span>
           <span className='techDescription w-full mt-[20px]'>
             TypeScript — это язык программирования, в котором исправлены многие
             недостатки JavaScript.
@@ -55,7 +57,9 @@ const FrontendStack = () => {
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
           <Image alt='next' src={tailwind} className='w-[40px] h-[40px]' />
-          <span className='techName mt-[40px] max-sml:mt-[25px]'>Tailwind css</span>
+          <span className='techName mt-[40px] max-sml:mt-[25px]'>
+            Tailwind css
+          </span>
           <span className='techDescription w-full mt-[20px]'>
             {" "}
             TailwindCSS – это CSS-библиотека, которая упрощает стилизацию HTML.
@@ -96,7 +100,9 @@ const FrontendStack = () => {
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
           <Image alt='next' src={sb} className='w-[40px] h-[40px]' />
-          <span className='techName mt-[40px] max-sml:mt-[25px]'>Story Book</span>
+          <span className='techName mt-[40px] max-sml:mt-[25px]'>
+            Story Book
+          </span>
           <span className='techDescription w-full mt-[20px]'>
             Storybook — это инструмент JavaScript для организации
             пользовательских интерфейсов.

@@ -1,28 +1,30 @@
-.main-logo{
-  animation: 1.5s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running main-logo;
+.main-logo {
+  animation: 1.5s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running
+    main-logo;
   transform: translate3d(0, -300px, 0);
 }
-.main-logo2{
-  animation: 0.7s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running main-logo;
+.main-logo2 {
+  animation: 0.7s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running
+    main-logo;
   transform: translate3d(0, -300px, 0);
 }
 
 .sub-logo {
-  animation:2.5s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running main-logo;
+  animation: 2.5s cubic-bezier(0, 0.1, 0.12, 0.99) 0s 1 normal forwards running
+    main-logo;
   color: white;
 }
-.hide{
+.hide {
   display: none;
 }
-.downArrow{
+.downArrow {
   transform: rotate(-90deg);
 }
-.baz{
-  animation: cubic-bezier(1.000, 0.015, 1.000, 0.915);
+.baz {
+  animation: cubic-bezier(1, 0.015, 1, 0.915);
 }
 
 @keyframes main-logo {
-
   0% {
     transform: translateY(100px);
     opacity: 0;
@@ -40,5 +42,4 @@
     transform: translateY(0);
     opacity: 1;
   }
-
 }

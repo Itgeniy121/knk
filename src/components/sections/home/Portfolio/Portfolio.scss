@@ -25,12 +25,12 @@
 .portfolio {
   margin-top: 55px;
 }
-.item{
+.item {
   margin-bottom: var(--custom-gap);
   max-width: calc(var(--index) * 21);
 }
 
-:root{
+:root {
   --custom-gap: calc(var(--index) * 10);
   --index: calc(1vw + 1vh);
 }
@@ -76,4 +76,3 @@
     -webkit-text-stroke: 1px;
   }
 }
-

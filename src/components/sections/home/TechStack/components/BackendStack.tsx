@@ -25,12 +25,15 @@ const BackendStack = () => {
           <Image alt='ts' src={jwt} className='w-[40px] h-[40px]' />
           <span className='techName mt-[40px] max-sml:mt-[25px]'>JWT</span>
           <span className='techDescription w-full mt-[20px]'>
-          JWT — это JSON Web Tokens, простой и безопасный способ передачи информации между клиентом и сервером с помощью шифрования.
+            JWT — это JSON Web Tokens, простой и безопасный способ передачи
+            информации между клиентом и сервером с помощью шифрования.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
           <Image alt='next' src={express} className='w-[40px] h-[40px]' />
-          <span className='techName mt-[40px] max-sml:mt-[25px]'>Expresx.js</span>
+          <span className='techName mt-[40px] max-sml:mt-[25px]'>
+            Expresx.js
+          </span>
           <span className='techDescription w-full mt-[20px]'>
             Express — фреймворк web-приложений для Node.js, реализованный как
             свободное и открытое программное обеспечение.

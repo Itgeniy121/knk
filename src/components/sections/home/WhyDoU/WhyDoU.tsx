@@ -20,7 +20,7 @@ const WhyDoU = () => {
           variants={PreviewAnimation}
           initial='hidden'
           whileInView='active'
-          viewport={{ once: true, amount: 0.2}}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <span className='lg:absolute xl:top-[-80px] top-[-40px] outlined-text xl:left-[-375px] left-[-225px]'>
             ЗАЧЕМ

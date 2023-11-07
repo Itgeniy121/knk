@@ -7,7 +7,8 @@ import Head from "next/head";
 import "react-toastify/dist/ReactToastify.css";
 export const metadata: Metadata = {
   title: "Создание современных сайтов на заказ в веб студии knkweb",
-  description: "Разработка сайтов любой сложности на заказ, мобильных приложений, дизайна по всей России в веб студии knkweb.",
+  description:
+    "Разработка сайтов любой сложности на заказ, мобильных приложений, дизайна по всей России в веб студии knkweb.",
   viewport: "width=device-width, initial-scale=1.0, user-scalable=no",
   keywords: "веб студия, сайты на заказ, разработка сайтов",
 };
@@ -18,9 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' id="main">
+    <html lang='en' id='main'>
       <Head>
-      <meta name="yandex-verification" content="3e041f65f948fbb7" />
+        <meta name='yandex-verification' content='3e041f65f948fbb7' />
       </Head>
       <body>
         <script

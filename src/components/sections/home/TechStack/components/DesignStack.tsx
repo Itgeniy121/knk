@@ -19,9 +19,12 @@ const DesignStack = () => {
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
           <Image alt='next' src={ps} className='w-[40px] h-[40px]' />
-          <span className='techName mt-[40px] max-sml:mt-[25px]'>Photoshop</span>
+          <span className='techName mt-[40px] max-sml:mt-[25px]'>
+            Photoshop
+          </span>
           <span className='techDescription w-full mt-[20px]'>
-            Adobe Photoshop — многофункциональный растровый графический редактор.
+            Adobe Photoshop — многофункциональный растровый графический
+            редактор.
           </span>
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
@@ -34,7 +37,9 @@ const DesignStack = () => {
         </div>
         <div className='w-[240px] h-[300px] flex flex-col px-[5px] justify-start items-start max-sml:w-[200px] max-sml:h-[200px]'>
           <Image alt='next' src={bs} className='w-[40px] h-[40px]' />
-          <span className='techName mt-[40px] max-sml:mt-[25px]'>BootStrap</span>
+          <span className='techName mt-[40px] max-sml:mt-[25px]'>
+            BootStrap
+          </span>
           <span className='techDescription w-full mt-[20px]'>
             Bootstrap — это популярная бесплатная платформа для HTML, CSS и
             JavaScript, используемая для разработки динамичных веб-сайтов.

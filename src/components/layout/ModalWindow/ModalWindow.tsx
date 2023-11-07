@@ -22,10 +22,10 @@ const ModalWindow = () => {
     modal?.classList.remove("active");
   };
   const onSubmit: SubmitHandler<formTypes> = async () => {
-    const data : formTypes = {
-      "name": name,
-      "phone": phoneNumber,
-      "text": description,
+    const data: formTypes = {
+      name: name,
+      phone: phoneNumber,
+      text: description,
     };
     const response = await fetch("https://knkweb.ru/api", {
       method: "POST",
@@ -34,7 +34,7 @@ const ModalWindow = () => {
         "Content-Type": "application/json; charset=utf-8",
       },
     });
-    if( response.ok) {
+    if (response.ok) {
       toast("Благодарим за вашу заявку! Свяжемся с вами в ближайшее время.", {
         position: "top-right",
         autoClose: 4000,
@@ -44,8 +44,8 @@ const ModalWindow = () => {
         draggable: true,
         theme: "dark",
       });
-    }else{
-      toast.error('Что-то пошло не так.', {
+    } else {
+      toast.error("Что-то пошло не так.", {
         position: "top-right",
         autoClose: 4000,
         hideProgressBar: false,
@@ -54,7 +54,7 @@ const ModalWindow = () => {
         draggable: true,
         progress: undefined,
         theme: "dark",
-        });
+      });
     }
     let modal = document.getElementById("modal");
     modal?.classList.remove("active");
@@ -116,9 +116,7 @@ const ModalWindow = () => {
               })}
               onChange={e => setDescription(e.target.value)}
             />
-            {errors?.text && (
-              <div className='error'>{errors.text.message}</div>
-            )}
+            {errors?.text && <div className='error'>{errors.text.message}</div>}
           </div>
           <button
             className='mt-[20px] border px-[40px] py-[15px] rounded-[4px] hover:bg-white hover:text-[#1b1b1b] max-xsml:text-[12px] w-[93%] duration-300'
